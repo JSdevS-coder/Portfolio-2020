@@ -1,0 +1,825 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Texturina', serif;
+  line-height: 1.5em;
+  font-size: 1em;
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: hsl(210, 100%, 10%);
+  box-sizing: border-box;
+}
+
+blockquote {
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 0.5px solid white;
+  border-top: 0.5px solid white;
+  
+}
+
+header {
+  width: 100%;
+  height: 5em;
+  padding-right: 0.1em;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: hsl(210, 100%, 10%);
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+header>p {
+  width: 20%;
+  font-weight: bold;
+  text-align:left;
+  position: absolute;
+  top: 0;
+  right: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#bubbles {
+  padding: 0;
+  margin: 0;
+  width: 70%;
+  height: 4em;
+  box-sizing: border-box;
+  position: relative;
+  top: 0.3em;
+  left: 0em;
+  color: white;
+  display: inline-block;
+  background-color: hsl(210, 100%, 10%);
+}
+
+.bubble {
+  width: 20%;
+  display: inline-block;
+  border-radius: 30px;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 0em;
+  left: -15em;
+  background-color: hsl(210, 100%, 10%);
+  font-size: 0.5em;
+}
+
+img {
+  width: 4em;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin-right: 0.2em;
+  position: absolute;
+  top: 2.5em;
+  left: 0em;
+  z-index: 4;
+}
+
+.x1 {
+  width: 20%;
+  box-sizing: border-box;
+  animation-name: about;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  z-index: 1;
+}
+
+.x2 {
+  z-index: 2;
+  width: 20%;
+  box-sizing: border-box;
+  animation-name: projects;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.x3 {
+  z-index: 3;
+  width: 20%;
+  box-sizing: border-box;
+  animation-name: contact;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.x4 {
+  margin-right: 0.5em;
+  animation-name: picture;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes about {
+  0% {left: -10em;}
+  25% {left: 0.5em;}
+  50% {left: 0.5em;}
+  75% {left: 0.5em;}
+  100% {left: 0.5em;}
+}
+
+@keyframes projects {
+  0% {left: -10em;visibility: hidden;}
+  25% {left: 0.5em;visibility: hidden;}
+  50% {left: 10em;}
+  75% {left: 10em;}
+  100% {left: 10em;}
+}
+
+@keyframes contact {
+  0% {left: -10em;visibility: hidden;}
+  25% {left: 0.5em;visibility: hidden;}
+  50% {left: 10em;visibility: hidden;}
+  75% {left: 20em;}
+  100% {left: 20em;}
+}
+
+@keyframes picture {
+  0% {left: -10em;visibility: hidden;}
+  25% {left: 0.5em;visibility: hidden;}
+  50% {left: 10em;visibility: hidden;}
+  75% {left: 30em;visibility: hidden;}
+  100% {left: 98%;}
+}
+
+
+#intro {
+  box-sizing: border-box;
+  width: 18em;
+  height: 10em;
+  padding: 0em;
+  margin: 5em auto 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 1em;
+  animation-name: intro;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes intro {
+  0% {top: -15em;z-index: 6;}
+  25% {top: -10em;z-index: 6;}
+  50% {top: -5em; left: 1em;z-index: 6;}
+  75% {top: 0em;left: 2em;z-index: 4;}
+  100% {top: 0em;left: 3em;}
+}
+
+#projects {
+  margin-top: 16em;
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.boxes {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  margin-top: 0.1em;
+  padding: 0;
+}
+
+#first {
+  height: 10em;
+  background: url("/Tribute page/mahatma-walking.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  left: -50em;
+  animation-name: fromL;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#text1 {
+  height: 10em;
+  padding-top: 1em;
+  background: hsla(210, 100%, 10%, 0.7);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#second {
+  height: 10em;
+  background: url("/Survey Form/training.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  top: 30.5em;
+  right: -50em;
+  animation-name: fromR;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#text2 {
+  height: 10em;
+  padding-top: 1em;
+  background: hsla(210, 100%, 10%, 0.7);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#third {
+  height: 10em;
+  background: url("/Product Landing Page/main.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  top: 40.8em;
+  left: -50em;
+  animation-name: fromL;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#text3 {
+  height: 10em;
+  padding-top: 1em;
+  background: hsla(210, 100%, 10%, 0.7);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#forth {
+  height: 10em;
+  background: url("https://repository-images.githubusercontent.com/134285701/635de980-586d-11ea-9220-1a3211239c30");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  right: -50em;
+  top: 51.1em;
+  animation-name: fromR;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#text4 {
+  height: 10em;
+  padding-top: 1em;
+  background: hsla(210, 100%, 10%, 0.7);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#fifth {
+  height: 10em;
+  background: url("https://museumofsolidarity.eu/wp-content/uploads/2017/08/pupinfeat2.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  left: -50em;
+  top: 61.4em;
+  animation-name: fromL;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#text5 {
+  height: 10em;
+  padding-top: 1em;
+  background: hsla(210, 100%, 10%, 0.7);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@keyframes fromL {
+  0% {left: -25em;}
+  25% {left: -20em;}
+  50% {left: -10em;}
+  75% {left: 5em;}
+  100% {left: 0em;}
+}
+
+@keyframes fromR {
+  0% {right: -25em;}
+  25% {right: -20em;}
+  50% {right: -10em;}
+  75% {right: 5em;}
+  100% {right: 0em;}
+}
+
+#q-projects {
+  box-sizing: border-box;
+  margin-top: 55em;
+  border-bottom: 0.5px solid white;
+
+}
+
+#arrow, #arrow-circle, .fa-angle-down {
+  display: hidden;
+  visibility: hidden;
+  box-sizing: border-box;
+}
+
+#about {
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 3em; 
+  padding: 0;
+  display: grid;
+  gap: 0.3em
+}
+
+#about>h1 {
+  grid-area: 1/1/2/4;
+}
+
+#learning {
+  grid-area: 2/1/3/4;
+}
+
+#learning a {
+  text-decoration: underline;
+}
+
+#learning>h1 {
+  text-align: center;
+}
+
+#about>blockquote {
+  grid-area: 4/1/5/4;
+}
+
+#certificates {
+  box-sizing: border-box;
+  margin-top: 1em;
+  grid-area: 3/1/4/4;
+  display: grid;
+  gap: 0.5em;
+  text-align-last: center;
+}
+
+#certificates>h1 {
+  grid-area: 1/1/2/12;
+}
+
+#certificates>.certificate {
+  background-color: hsla(216, 100%, 30%, 0.3);
+  margin: 0;
+  padding: 0.5em;
+}
+
+#cer1 {
+  grid-area: 2/1/3/6;
+  text-align: center;
+  
+}
+
+#cer2 {
+  grid-area: 2/6/3/12;
+  text-align: center;
+}
+
+#cer3 {
+  grid-area: 3/1/4/6;
+  text-align: center;
+}
+
+#cer4 {
+  grid-area: 3/6/4/12;
+  text-align: center;
+}
+
+#cer5 {
+  grid-area: 4/1/5/12;
+  text-align: center;
+}
+
+footer {
+  box-sizing: border-box;
+  margin: 1em auto;
+}
+
+#email {
+  color: black;
+  padding: 0.3em 0.5em;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+#email>span {
+  background-color: white;
+  padding: 1em;
+  font-weight: 600;
+  visibility: hidden;
+ 
+}
+
+button {
+  border: none;
+  background-color: hsl(216, 100%, 60%);
+  padding: 1em;
+  color: black;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+#contact {
+  line-height: 1.5em;
+}
+
+
+.fa-envelope-square, .fa-github, .fa-file-pdf {
+  font-size: 1.5em;
+  padding: 0;
+}
+
+#profile-link, #cv {
+  text-decoration: underline;
+}
+
+@media (min-width:700px) {
+  #bubbles {
+    width: 70%;
+  }
+
+  .x1, .x2, .x3 {
+    width: 15%;
+  }
+
+  img {
+    top: 1em;
+    margin-right: 0.5em;
+  }
+
+  @keyframes picture {
+    0% {left: -10em;visibility: hidden;}
+    25% {left: 0.5em;visibility: hidden;}
+    50% {left: 10em;visibility: hidden;}
+    75% {left: 30em;visibility: hidden;}
+    100% {left: 102%;}
+  }
+
+  #intro {
+    width: 30em;
+  }
+  
+  @keyframes intro {
+    0% {top: -20em;z-index: 6;}
+    25% {top: -15em;z-index: 6;}
+    50% {top: -10em; left: 1em;z-index: 6;}
+    75% {top: -5em;left: 3.5em;z-index: 6;}
+    100% {top: 0em;left: 9em;z-index: 4;}
+  }
+
+  #first, #second, #third, #forth {
+    width: 49.5%;
+  }
+
+  #first, #second {
+    top: 19em;
+  }
+
+  #third, #forth {
+    top: 29.5em;
+  }
+
+  #fifth {
+    height: 13em;
+    top: 39.8em;
+    animation-name: leftB;
+    left: -45em;
+  }
+
+  #text5 {
+    height: 13em;
+  }
+
+  @keyframes leftB {
+    0% {left: -45em;}
+    25% {left: -30em;}
+    50% {left: -15em;}
+    75% {left: 5em;}
+    100% {left: 0em;}
+  }
+
+  .bubble {
+    background-color: hsl(210, 100%, 10%);
+  }
+
+  #q-projects {
+    margin-top: 38em;
+  }
+
+  #certificates>.certificate {
+    background-color: hsla(216, 100%, 40%, 0.3);
+    margin: 0;
+    padding: 0.5em;
+  }
+
+}
+
+@media (min-width:1000px) {
+  #first_look {
+    height: 100vh;
+  }
+
+  .x1, .x2, .x3 {
+    width: 10%;
+  }
+
+  @keyframes picture {
+    0% {left: -10em;visibility: hidden;}
+    25% {left: 0.5em;visibility: hidden;}
+    50% {left: 50em;visibility: hidden;}
+    75% {left: 70em;visibility: hidden;}
+    100% {left: 105%;}
+  }
+
+  #intro {
+    width: 70%;
+    height: 12em;
+  }
+
+  #projects {
+    margin-top: 10em;
+    height: 100vh;
+  }
+
+  #first, #second, #third, #forth, #fifth {
+    width: 20%;
+    top: 20em;
+    height: 15em;
+    transition-property: transform;
+    transition-duration: 1s;
+  }
+
+  #first:hover {
+    transform: scale(1.1);
+  }
+
+  #second:hover {
+    transform: scale(1.1);
+  }
+
+  #third:hover {
+    transform: scale(1.1);
+  }
+
+  #forth:hover {
+    transform: scale(1.1);
+  }
+
+  #fifth:hover {
+    transform: scale(1.1);
+  }
+
+  #text1, #text2, #text3, #text4, #text5 {
+    height: 15em;
+    color: transparent;
+    background: hsla(210, 100%, 10%, 0);
+  }
+
+  #text1:hover {
+    color: white;
+    background: hsla(210, 100%, 10%, 0.7);
+   
+  }
+
+  #text2:hover {
+    color: white;
+    background: hsla(210, 100%, 10%, 0.7);
+  }
+
+  #text3:hover {
+    color: white;
+    background: hsla(210, 100%, 10%, 0.7);
+  }
+
+  #text4:hover {
+    color: white;
+    background: hsla(210, 100%, 10%, 0.7);
+  }
+
+  #text5:hover {
+    color: white;
+    background: hsla(210, 100%, 10%, 0.7);
+  }
+
+  #second {
+    animation-name: bigL1;
+  }
+
+  @keyframes bigL1 {
+    0% {left: -25em;}
+    25% {left: -20em;}
+    50% {left: -10em;}
+    75% {left: 5em;}
+    100% {left: 20%;}
+  }
+
+  #third {
+    animation-name: bigL2;
+  }
+  
+  @keyframes bigL2 {
+    0% {left: -25em;}
+    25% {left: -20em;}
+    50% {left: -10em;}
+    75% {left: 5em;}
+    100% {left: 40%;}
+  }
+
+  #fifth {
+    animation-name: bigL5;
+  }
+
+  @keyframes bigL5 {
+    0% {left: -25em;}
+    25% {left: -20em;}
+    50% {left: -10em;}
+    75% {left: 5em;}
+    100% {left: 60%;}
+  }
+
+  #q-projects {
+    margin-top: 17em;
+  }
+
+  #arrow {
+    visibility: visible;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0.5em auto 3em auto;
+    padding: 0;
+    position: relative;
+    top: -5em;
+    width: 4em;
+    height: 4em;
+    text-align: center;
+  }
+  
+  #arrow-circle {
+    visibility: visible;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 3rem;
+    height: 3rem;
+    font-size: 4em;
+    text-align: left;
+  }
+  
+  .fa-angle-down {
+    visibility: visible;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position:absolute;
+    left: 25%;
+    top: 0.1em;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes arrow {
+    0% {opacity: 0;}
+    25% {opacity: 0.2;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.7;}
+    100% {opacity: 1;}
+  }
+
+  #about {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 3em;
+    
+  }
+
+  #learning {
+    margin: 0;
+    padding: 0;
+  }
+
+  #certificates {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    gap: 1em;
+  }
+
+  #certificates>h1 {
+    grid-area: 1/1/2/11;
+    font-size: 2em;
+    margin-left: 1em;
+    padding-left: 1em;
+  }
+  
+  #certificates>.certificate:nth-child(even) {
+    background-color: hsla(216, 100%, 20%, 0.3);
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  #certificates>.certificate:nth-child(odd) {
+    background-color: hsla(216, 100%, 40%, 0.3);
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  #cer1 {
+    grid-area: 2/1/3/3;
+    text-align: center;
+  
+  }
+
+  #cer2 {
+    grid-area: 2/3/3/5;
+    text-align: center;
+  }
+
+  #cer3 {
+    grid-area:2/5/3/7;
+    text-align: center;
+  }
+
+  #cer4 {
+    grid-area: 2/7/3/9;
+    text-align: center;
+  }
+
+  #cer5 {
+    grid-area: 2/9/3/11;
+    text-align: center;
+  }
+
+  .certificate:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  }
+
+  #profile-link:hover {
+    display: inline-block;
+    transform: scale(1.1);
+  }
+
+  #email button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+}
