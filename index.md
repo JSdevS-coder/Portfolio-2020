@@ -1,1 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Texturina&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <title>Home page</title>
+</head>
+
+<body>
+  <div id="first_look">
+    <header>
+    <p>SEMIRA KUBAT</p>
+    <div id="bubbles">
+      <div class="bubble x1"><a href="#about">
+          <h1>About</h1>
+        </a>
+      </div>
+      <div class="bubble x2"><a href="#projects">
+          <h1>Projects</h1>
+        </a>
+      </div>
+      <div class="bubble x3"><a href="#contact">
+          <h1>Contact</h1>
+        </a>
+      </div>
+      <div class="bubble x4">
+        <img src="photo1.jpg" alt="Picture">
+      </div>
+    </div>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h2>Front-end Developer</h2>
+        <blockquote>“Don’t wish it were easier. Wish you were better.” 
+          <br>
+          -Jim Rohn
+        </blockquote>
+      </section>
+      
+      <article id="projects">
+      <h1>Projects: </h1>
+        <section class="boxes">
+          <a href="/Tribute page/index.html" target="_blank">
+            <div id="first">
+              <div id="text1">
+                <h1>Tribute page</h1>
+                  <h3>Mahatma Ghandi</h3>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <section class="boxes">
+          <a href="/Survey Form/index.html" target="_blank">
+            <div id="second">
+              <div id="text2">
+                <h1>Survey Form</h1>
+                  <h3>Training satisfaction</h3>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <section class="boxes">
+          <a href="/Product Landing Page/index.html" target="_blank">
+            <div id="third">
+              <div id="text3">
+                <h1>Product Landing Page</h1>
+                  <h3>Blue-light protection glasses</h3>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <section class="boxes">
+          <a href="/Technical documentation page/index.html" target="_blank">
+            <div id="forth">
+              <div id="text4">
+                <h1>Technical Documentation Page</h1>
+                  <h3>Some Basic HTML</h3>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <section class="boxes">
+          <a href="/Short Bio/index.html" target="_blank">
+            <div id="fifth">
+              <div id="text5">
+                <h1>Short Biography</h1>
+                  <h3>M. I. Pupin</h3>
+              </div>
+            </div>
+          </a>
+        </section>
+
+        <blockquote id="q-projects">“Don't be afraid to give your best to what seemingly are small jobs. Every time you conquer one it makes you that much stronger. If you do the little jobs well, the big ones will tend to take care of themselves.”
+          <br>
+          -William Patten
+        </blockquote>
+      </article>
+
+      <div id="arrow"> 
+        <a href="#about">
+        <div id="arrow-circle"><i class="fas fa-angle-down"></i></div></a>
+      </div>
+  </div>
+  
+
+    <article id="about">
+        <section id="learning">
+          <h1>More about me</h1>
+          <p>Started learning coding in May 2020, through different online courses.</p>
+          <p>Learning rules and ways of coding also from <a href="https://www.w3schools.com/">W3Schools</a>  and from apps <a href="https://www.sololearn.com/">Solo Learn</a>
+           and <a href="https://grasshopper.app/">GrassHopper</a>.</p>
+          <p>Sign in for <a href="https://www.it-akademija.com/">IT Academy</a> for program Front-end JavaScript development which started in November 2020.</p>
+          <p>Started learning with <a href="https://www.freecodecamp.org/">freeCodeCamp</a>  in December 2020.</p>
+        </section>
+        <section id="certificates">
+          <h3>Certificates:</h3>
+      
+          <div class="certificate" id="cer1">
+            <a href="/Certificates/Certificate  freeCodeCamp.jpg" target="_blank"><i class="fas fa-file-pdf"></i> Free Code Camp Certificate</a>
+          </div>
+          <div class="certificate" id="cer2">
+            <a href="/Certificates/SL-JS.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Solo Learn JS Certificate</a>
+          </div>
+          <div class="certificate" id="cer3">
+            <a href="/Certificates/SL-CSS.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Solo Learn CSS Certificate</a>
+          </div>
+          <div class="certificate" id="cer4">
+            <a href="/Certificates/SL-HTML.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Solo Learn HTML Certificate</a>
+          </div>
+          <div class="certificate" id="cer5">
+            <a href="/Certificates/Open Academy.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Open Academy Certificate</a>
+          </div>
+        </section>
+          
+        <blockquote>“When we strive to become better than we are, everything around us becomes better too.”
+          <br>
+          -Paulo Coelho
+        </blockquote>
+    </article>
+
+    <footer>
+      <article id="contact">
+        <section >
+          <div>
+            If you like what you see in this portfolio, feel free to contact me.
+          </div>
+
+          <p id="email"><button><b><i class="fas fa-envelope-square"></i> Email</b></button> <span id="mail">semira.kubat1991@gmail.com</span></p>
+          <div>
+            You can also see more of my work at &nbsp; 
+            <a href="https://github.com/JSdevS-coder?tab=repositories" id="profile-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>.
+          </div>
+          <div>
+            And if you are interested here you can see my &nbsp; 
+            <a href="Semira_Kubat CV.pdf" target="_blank" id="cv"> <i class="fas fa-file-pdf"></i> CV</a>.
+          </div>
+        </section>
+
+        <blockquote>“Try not to become a person of success, but rather try to become a person of value.”
+          <br>
+          -Albert Einstein
+        </blockquote>
+      </article>
+      
+    </footer>  
+  </main>
+  <script>
+    let btn = document.querySelector("#email");
+    let email = document.querySelector("#mail");
+    
+    let btn_event = btn.addEventListener("click", () => 
+    { 
+      email.style.visibility = "visible";
+      
+    });
+
+    let btnEvent = email.addEventListener("mouseout", () => 
+    { 
+      email.style.visibility = "hidden";
+      
+    });
+
+    let emailEvent = btn.addEventListener("focusout", () => 
+    { 
+      email.style.visibility = "hidden";
+      
+    });
+
+    let emailEvent2 = mail.addEventListener("focusout", () => 
+    { 
+      email.style.visibility = "hidden";
+      
+    });
+
+  </script>
+</body>
+</html>
