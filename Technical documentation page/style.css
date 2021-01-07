@@ -182,6 +182,16 @@ a:focus, a:visited {
     cursor: pointer;
   }
 
+  pre {
+    background-color: whitesmoke;
+    text-align: left;
+    overflow-x: scroll;
+    margin: 0.2em 1em;
+    padding: 0.1em 0;
+    width: 70%;
+    
+  }
+
   #main-doc {
     width: 77vw;
     margin-left: 18vw;
@@ -192,6 +202,11 @@ a:focus, a:visited {
     box-sizing: border-box;
     width: 80vw;
   
+  }
+
+  #html_iframes {
+    width: 100%;
+    overflow: hidden;
   }
 
   footer h2,p {
